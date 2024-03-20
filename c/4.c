@@ -7,6 +7,22 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
+    int point;
+    scanf("%d", &point);
+    
+    if(90<=point && point<=100){
+        printf("A\n");
+    }else if(80<=point && point<90){
+        printf("B\n");
+    }else if(70<=point && point<80){
+        printf("C\n");
+    }else if(60<=point && point<70){
+        printf("D\n");
+    }else if(point<60){
+        printf("F\n");
+    }else{
+        printf("error");
+    }
 
     return 0;
 }

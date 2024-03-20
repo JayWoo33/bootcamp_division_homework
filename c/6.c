@@ -7,6 +7,14 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
-
+    char input;
+    scanf("%c", &input);
+    
+    if(input == 'a' ||input == 'i' ||input == 'e' ||input == 'u' ||input == 'o'){
+        printf("O");
+    }else{
+        printf("X");
+    }
+    
     return 0;
 }

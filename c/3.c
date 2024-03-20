@@ -7,6 +7,16 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
+    int time;
+    scanf("%d", &time);
+    
+    if(0<=time && time<=12){
+        printf("AM\n");
+    }else if(13<=time && time<=23){
+        printf("PM\n");
+    }else{
+        printf("error\n");
+    }
 
     return 0;
 }

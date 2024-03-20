@@ -7,6 +7,28 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
+    int year;
+	int month;
+	scanf("%d", &year);
+	scanf("%d", &month);
 
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+		if (month == 4 || month == 6 || month == 9 || month == 11) {
+			printf("30\n");
+		}else if(month == 2) {
+			printf("29\n");
+		}else {
+			printf("31\n");
+		}
+	}else {
+		if (month == 4 || month == 6 || month == 9 || month == 11) {
+			printf("30\n");
+		}else if (month == 2) {
+			printf("28\n");
+		}else {
+			printf("31\n");
+		}
+	}
+    
     return 0;
 }

@@ -6,7 +6,9 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    char input[3];
+    scanf("%s", &input);
+    printf("%c%c%c", input[2], input[1], input[0]);
 
     return 0;
 }
